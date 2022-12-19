@@ -30,12 +30,18 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-      - name: Setup Pages
+      - uses: actions/setup-node@v3
+        with:
+          node-version: current
+      - name: Build site
+        run:  yarn install --immutable && yarn build
+      # todo: is this required?
+      - name: Setup pages
         uses: actions/configure-pages@v2
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
-          path: 'dist'
+          path: 'target/dist'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v1

@@ -63,8 +63,8 @@ export default defineUserConfig({
     }
   }),
 
-  dest: path.join(__dirname, "dist"),
   public: path.join(__dirname, "public"),
+  dest: path.join(__dirname, "target/dist"),
   temp: path.join(__dirname, "target/temp"),
   cache: path.join(__dirname, "target/cache")
 });
