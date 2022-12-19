@@ -1,6 +1,7 @@
 import { defineUserConfig } from "vuepress";
 import { defaultTheme } from "@vuepress/theme-default";
 import { viteBundler } from "@vuepress/bundler-vite";
+import { registerComponentsPlugin } from "@vuepress/plugin-register-components";
 
 import tailwindcss from "tailwindcss";
 import autoprefixer from "autoprefixer";
@@ -41,6 +42,14 @@ export default defineUserConfig({
   alias: {
     "@theme/AutoLink.vue": path.join(__dirname, "components/AcidicAutoLink.vue")
   },
+
+  plugins: [
+    registerComponentsPlugin({
+      components: {
+        Icon: path.resolve(__dirname, "./components/AcidicIcon.vue")
+      }
+    })
+  ],
 
   head: [["link", { rel: "icon", href: "/logo.png" }]],
 

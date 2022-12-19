@@ -1,6 +1,7 @@
 <script setup>
 import { toRefs } from "vue";
 import AutoLink from "@vuepress/theme-default/lib/client/components/AutoLink.vue";
+import AcidicIcon from "./AcidicIcon.vue";
 
 const props = defineProps({
   item: {
@@ -13,9 +14,6 @@ const { item } = toRefs(props);
 </script>
 
 <template>
-  <AutoLink :item="item">
-    <template #before v-if="item.icon"
-      ><i :class="item.icon" aria-hidden="true"></i
-    ></template>
-  </AutoLink>
+  <AcidicIcon v-if="item.icon" :icon="item.icon" class="mr-2"></AcidicIcon>
+  <AutoLink :item="item"></AutoLink>
 </template>
