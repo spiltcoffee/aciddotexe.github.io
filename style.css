@@ -1,0 +1,10 @@
+@tailwind utilities;
+
+a[href*=twitch]::before {
+  @apply font-bold;
+  content: "";
+}
+
+a[href*=mastodon]::before {}
+
+a[href*=twitter]::before {}
