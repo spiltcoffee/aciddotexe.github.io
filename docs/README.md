@@ -1,6 +1,8 @@
-# aciddotEXE
+# Welcome!
 
-Hello! I am yet to write stuff onto this page since my husband has surprised me with it for Christmas like a jerk.
+Hello! I am aciddotEXE!
+
+I am yet to write stuff onto this page since my husband has surprised me with it for Christmas like a jerk.
 
 Anyway, follow me on the things!
 

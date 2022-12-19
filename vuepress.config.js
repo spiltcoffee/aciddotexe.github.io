@@ -13,7 +13,7 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 export default defineUserConfig({
   lang: "en-US",
   title: "aciddotEXE",
-  description: "Merry Christmas!",
+  description: "Local yelling lady",
 
   theme: defaultTheme({
     logo: "/logo.png",
