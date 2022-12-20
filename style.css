@@ -62,11 +62,18 @@
     text-center
     border-solid
     border-2
-    border-slate-500
-    bg-slate-900
     rounded-lg
-    no-underline
-    hover:bg-slate-800;
+    no-underline;
+
+  @apply border-slate-300
+    bg-slate-100
+    hover:bg-slate-200;
+}
+
+.dark .button {
+  @apply border-slate-700
+  bg-slate-900
+  hover:bg-slate-800;
 }
 
 html,
