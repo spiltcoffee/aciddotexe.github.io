@@ -1,1 +1,58 @@
 @tailwind utilities;
+
+.bg-emote {
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  background-blend-mode: multiply;
+  background-attachment: fixed;
+  background-size: min(448px, 50vw);
+  --bg-emote--gradient: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.3),
+    rgba(255, 255, 255, 0.3)
+  );
+}
+
+.bg-emote--ahhh {
+  background-image: url("/emotes/ahhh.png"), var(--bg-emote--gradient);
+}
+
+.bg-emote--heart {
+  background-image: url("/emotes/heart.png");
+}
+
+.bg-emote--hi {
+  background-image: url("/emotes/hi.png");
+}
+
+.bg-emote--lurk {
+  background-image: url("/emotes/lurk.png");
+}
+
+.bg-emote--stab {
+  background-image: url("/emotes/stab.png");
+}
+
+.button {
+  @apply inline-block
+    p-2
+    mx-2
+    text-lg
+    text-center
+    border-solid
+    border-2
+    border-slate-500
+    bg-slate-900
+    rounded-lg
+    no-underline
+    hover:bg-slate-800;
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+.theme-default-content a:hover {
+  text-decoration: unset;
+}

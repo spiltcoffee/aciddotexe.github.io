@@ -14,11 +14,11 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 export default defineUserConfig({
   lang: "en-US",
   title: "aciddotEXE",
-  description: "Local yelling lady",
+  description: "Your friendly loud neighbourhood lady",
 
   theme: defaultTheme({
     logo: "/emotes/stab.png",
-    sidebar: false,
+    contributors: false,
     navbar: [
       {
         icon: "fa-brands fa-twitch",
