@@ -17,7 +17,7 @@ export default defineUserConfig({
   description: "Local yelling lady",
 
   theme: defaultTheme({
-    logo: "/logo.png",
+    logo: "/emotes/stab.png",
     sidebar: false,
     navbar: [
       {
@@ -51,7 +51,7 @@ export default defineUserConfig({
     })
   ],
 
-  head: [["link", { rel: "icon", href: "/logo.png" }]],
+  head: [["link", { rel: "icon", href: "/emotes/stab.png" }]],
 
   bundler: viteBundler({
     viteOptions: {
