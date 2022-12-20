@@ -10,13 +10,19 @@ import { fileURLToPath } from "url";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
+const domain = "aciddotexe.com";
+const url = `https://${domain}`;
+const title = "aciddotEXE";
+const description = "Your friendly loud neighbourhood lady";
+const logo = "/emotes/stab.png";
+
 export default defineUserConfig({
   lang: "en-US",
-  title: "aciddotEXE",
-  description: "Your friendly loud neighbourhood lady",
+  title,
+  description,
 
   theme: defaultTheme({
-    logo: "/emotes/stab.png",
+    logo,
     contributors: false,
     navbar: [
       {
@@ -50,7 +56,22 @@ export default defineUserConfig({
     })
   ],
 
-  head: [["link", { rel: "icon", href: "/emotes/stab.png" }]],
+  head: [
+    ["link", { rel: "icon", href: "/emotes/stab.png" }],
+
+    ["meta", { property: "og:url", content: url }],
+    ["meta", { property: "og:type", content: "website" }],
+    ["meta", { property: "og:title", content: title }],
+    ["meta", { property: "og:description", content: description }],
+    ["meta", { property: "og:image", content: `${url}${logo}` }],
+
+    ["meta", { name: "twitter:card", content: "summary_large_image" }],
+    ["meta", { property: "twitter:domain", content: domain }],
+    ["meta", { property: "twitter:url", content: url }],
+    ["meta", { name: "twitter:title", content: title }],
+    ["meta", { name: "twitter:description", content: description }],
+    ["meta", { name: "twitter:image", content: `${url}${logo}` }]
+  ],
 
   bundler: viteBundler({
     viteOptions: {
