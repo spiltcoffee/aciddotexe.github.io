@@ -58,4 +58,4 @@ Here is what people are saying about me!
   </Testimonial>
 </template>
 
-_Want to give me a review? You can do so here!_
+_Want to give me a review? You can do so [here!](https://github.com/spiltcoffee/aciddotexe.github.io/issues/new/choose)_
