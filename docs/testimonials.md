@@ -7,12 +7,12 @@ Here is what people are saying about me!
   good wife 10/10, would marry again
 </Testimonial>
 
-<Testimonial name="Willow, pet dog" avatar="./avatars/willow.png">
+<Testimonial name="Willow, pet dog" avatar="./avatars/willow.jpg">
   ⭐⭐<br>
   *yelling*
 </Testimonial>
 
-<Testimonial name="Humble-bumble-bee" avatar="https://github.com/Humble-Bumble-bee.png">
+<Testimonial name="Humble-bumble-bee" avatar="./avatars/humble-bumble-bee.png">
   ⭐⭐⭐⭐⭐<br>
   Life and loudspeaker of the party
 </Testimonial>
