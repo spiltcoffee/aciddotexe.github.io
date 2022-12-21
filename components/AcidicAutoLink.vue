@@ -11,9 +11,13 @@ const props = defineProps({
 });
 
 const { item } = toRefs(props);
+console.log(item.value);
 </script>
 
 <template>
-  <AcidicIcon v-if="item.icon" :icon="item.icon" class="mr-2"></AcidicIcon>
-  <AutoLink :item="item"></AutoLink>
+  <AutoLink v-bind="$attrs" :item="item">
+    <template #before>
+      <AcidicIcon :icon="item.text"></AcidicIcon>
+    </template>
+  </AutoLink>
 </template>

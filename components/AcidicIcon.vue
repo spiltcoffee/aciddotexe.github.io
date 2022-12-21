@@ -1,10 +1,6 @@
 <script setup>
-import { computed, toRefs, ref, onMounted } from "vue";
-import {
-  icon as buildIcon,
-  findIconDefinition,
-  parse
-} from "@fortawesome/fontawesome-svg-core";
+import { computed, toRefs, ref, onMounted, inject } from "vue";
+import { icon as buildIcon } from "@fortawesome/fontawesome-svg-core";
 
 const props = defineProps({
   icon: {
@@ -14,8 +10,11 @@ const props = defineProps({
 });
 
 const { icon } = toRefs(props);
-const html = computed(
-  () => buildIcon(findIconDefinition(parse.icon(icon.value))).html
+const icons = inject("icons");
+
+const iconObj = computed(() => icons[icon.value.toLowerCase()]);
+const html = computed(() =>
+  iconObj.value ? buildIcon(iconObj.value).html : undefined
 );
 
 const ready = ref(false);
@@ -29,5 +28,5 @@ if (!__VUEPRESS_SSR__) {
 </script>
 
 <template>
-  <span :class="{'hidden': !ready}" v-html="html"></span>
+  <span v-if="html" :class="{ hidden: !ready }" v-html="html"></span>
 </template>

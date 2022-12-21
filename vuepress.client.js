@@ -1,7 +1,7 @@
 import { defineClientConfig } from "@vuepress/client";
-import { onMounted } from "vue";
+import { provide, onMounted } from "vue";
 import "./style.css";
-import "./fontawesome.config";
+import { icons } from "./fontawesome.config";
 
 const BG_EMOTE_CLASS = [
   "bg-emote--ahhh",
@@ -13,6 +13,8 @@ const BG_EMOTE_CLASS = [
 
 export default defineClientConfig({
   setup() {
+    provide("icons", icons);
+
     onMounted(() => {
       const bgEmoteClass = BG_EMOTE_CLASS.at(
         Math.floor(Math.random() * BG_EMOTE_CLASS.length)

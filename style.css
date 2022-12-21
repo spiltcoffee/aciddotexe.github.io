@@ -54,28 +54,6 @@
     var(--bg-emote--gradient);
 }
 
-.button {
-  @apply inline-block
-    p-2
-    mx-2
-    text-lg
-    text-center
-    border-solid
-    border-2
-    rounded-lg
-    no-underline;
-
-  @apply border-slate-300
-    bg-slate-100
-    hover:bg-slate-200;
-}
-
-.dark .button {
-  @apply border-slate-700
-  bg-slate-900
-  hover:bg-slate-800;
-}
-
 html,
 body {
   min-height: 100%;

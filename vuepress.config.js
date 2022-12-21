@@ -26,22 +26,21 @@ export default defineUserConfig({
     contributors: false,
     navbar: [
       {
-        icon: "fa-brands fa-twitch",
         text: "Twitch",
         link: "https://www.twitch.tv/aciddotexe"
       },
       {
-        icon: "fa-brands fa-mastodon",
         text: "Mastodon",
         link: "https://mastodon.au/@aciddotEXE",
         rel: "me noopener noreferrer"
       },
       {
-        icon: "fa-brands fa-twitter",
         text: "Twitter",
         link: "https://twitter.com/aciddotexe"
       }
-    ]
+    ],
+
+    sidebar: ["introduction", "socials"]
   }),
 
   alias: {
@@ -51,7 +50,19 @@ export default defineUserConfig({
   plugins: [
     registerComponentsPlugin({
       components: {
-        Icon: path.resolve(__dirname, "./components/AcidicIcon.vue")
+        ButtonLink: path.resolve(
+          __dirname,
+          "./components/AcidicButtonLink.vue"
+        ),
+        ButtonLinks: path.resolve(
+          __dirname,
+          "./components/AcidicButtonLinks.vue"
+        ),
+        Icon: path.resolve(__dirname, "./components/AcidicIcon.vue"),
+        Testimonial: path.resolve(
+          __dirname,
+          "./components/AcidicTestimonial.vue"
+        )
       }
     })
   ],
