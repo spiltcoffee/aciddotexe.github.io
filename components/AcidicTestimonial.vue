@@ -1,6 +1,6 @@
 <script setup>
 import AutoLink from "@vuepress/theme-default/lib/client/components/AutoLink.vue";
-import { toRefs } from "vue";
+import { ref, toRefs, onMounted } from "vue";
 
 const props = defineProps({
   name: {
@@ -18,17 +18,24 @@ const props = defineProps({
 });
 
 const { name, avatar, link } = toRefs(props);
+
+const ready = ref(false);
+/* global __VUEPRESS_SSR__ */
+if (!__VUEPRESS_SSR__) {
+  onMounted(() => {
+    ready.value = true;
+  });
+}
 </script>
 
 <template>
-  <div class="testimonial">
+  <div v-if="ready" class="testimonial">
     <div class="quote">
       <slot></slot>
     </div>
     <div class="signature">
       <img :src="avatar" class="avatar" />
-      <AutoLink v-if="link" class="user" :item="{ text: name, link }" />
-      <span v-else class="user">{{ name }}</span>
+      <span class="user">{{ name }}</span>
     </div>
   </div>
 </template>
@@ -41,7 +48,7 @@ const { name, avatar, link } = toRefs(props);
   @apply bg-slate-700;
 }
 .quote {
-  @apply m-2 p-4 italic bg-slate-300 rounded-md;
+  @apply m-2 p-4 italic bg-slate-300 rounded-md whitespace-pre-line;
 }
 .dark .quote {
   @apply bg-slate-800;

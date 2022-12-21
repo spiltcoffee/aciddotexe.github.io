@@ -18,7 +18,6 @@ const html = computed(() =>
 );
 
 const ready = ref(false);
-
 /* global __VUEPRESS_SSR__ */
 if (!__VUEPRESS_SSR__) {
   onMounted(() => {

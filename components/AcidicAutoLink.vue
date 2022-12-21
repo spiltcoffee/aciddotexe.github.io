@@ -11,7 +11,6 @@ const props = defineProps({
 });
 
 const { item } = toRefs(props);
-console.log(item.value);
 </script>
 
 <template>

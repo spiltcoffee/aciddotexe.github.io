@@ -1,0 +1,25 @@
+name: Testimonial
+description: Leave aciddotEXE a review
+title: "[Testimonial]: "
+labels: ["testimonial"]
+assignees:
+  - spiltcoffee
+body:
+  - type: input
+    id: name
+    attributes:
+      label: Name
+    validations:
+      required: true
+  - type: input
+    id: avatar
+    attributes:
+      label: Avatar URL
+      description: If left empty, I will use your GitHub avatar instead
+  - type: textarea
+    id: text
+    attributes:
+      label: Testimonial
+      description: So... whatchathink?
+    validations:
+      required: true
