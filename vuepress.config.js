@@ -13,7 +13,7 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const domain = "aciddotexe.com";
 const url = `https://${domain}`;
 const title = "aciddotEXE";
-const description = "Your friendly loud neighbourhood lady";
+const description = "Loud and opinionated, yet friendly, gamer and streamer";
 const logo = "/emotes/stab.png";
 
 export default defineUserConfig({
