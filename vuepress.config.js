@@ -40,7 +40,7 @@ export default defineUserConfig({
       }
     ],
 
-    sidebar: ["introduction", "socials"]
+    sidebar: ["introduction", "socials", "testimonials"]
   }),
 
   alias: {
