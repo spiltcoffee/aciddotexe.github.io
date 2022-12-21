@@ -39,6 +39,7 @@ const testimonials = [
   new Testimonial(
     "ItsMeTonyG", 
     "./avatars/itsmetonyg.jpg",
+    "⭐️⭐️⭐️⭐️⭐️",
     "10/10, Perfectly loud and full of laughs. She knows of my horcruxes, thus I must give a perfect score or I will die of laughter."
   )
 ].sort(() => 0.5 - Math.random());
