@@ -11,3 +11,12 @@ Here is what people are saying about me!
   ⭐⭐<br>
   *yelling*
 </Testimonial>
+
+<Testimonial name="Humble-bumble-bee" avatar="https://github.com/Humble-Bumble-bee.png" link="https://github.com/Humble-Bumble-bee">
+  ⭐⭐⭐⭐⭐<br>
+  Life and loudspeaker of the party
+</Testimonial>
+
+<Testimonial name="charlemagne" avatar="https://github.com/charlottepierce.png" link="https://github.com/charlottepierce">
+  10/10 hugs, many warm ⭐️⭐️⭐️⭐️⭐️🎉
+</Testimonial>
