@@ -35,22 +35,22 @@
 }
 
 .bg-emote--heart {
-  background-image: var(--bg-emote--gradient), url("/emotes/ahhh.png"),
+  background-image: var(--bg-emote--gradient), url("/emotes/heart.png"),
     var(--bg-emote--gradient);
 }
 
 .bg-emote--hi {
-  background-image: var(--bg-emote--gradient), url("/emotes/ahhh.png"),
+  background-image: var(--bg-emote--gradient), url("/emotes/hi.png"),
     var(--bg-emote--gradient);
 }
 
 .bg-emote--lurk {
-  background-image: var(--bg-emote--gradient), url("/emotes/ahhh.png"),
+  background-image: var(--bg-emote--gradient), url("/emotes/lurk.png"),
     var(--bg-emote--gradient);
 }
 
 .bg-emote--stab {
-  background-image: var(--bg-emote--gradient), url("/emotes/ahhh.png"),
+  background-image: var(--bg-emote--gradient), url("/emotes/stab.png"),
     var(--bg-emote--gradient);
 }
 
