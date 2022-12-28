@@ -6,7 +6,8 @@ import {
 import {
   faTwitch,
   faMastodon,
-  faTwitter
+  faTwitter,
+  faDiscord
 } from "@fortawesome/free-brands-svg-icons";
 
 export const icons = {
@@ -15,5 +16,6 @@ export const icons = {
   testimonials: faComments,
   twitch: faTwitch,
   mastodon: faMastodon,
-  twitter: faTwitter
+  twitter: faTwitter,
+  discord: faDiscord
 };

@@ -37,6 +37,10 @@ export default defineUserConfig({
       {
         text: "Twitter",
         link: "https://twitter.com/aciddotexe"
+      },
+      {
+        text: "Discord",
+        link: "https://discord.gg/UpgqpW3r6F"
       }
     ],
 
