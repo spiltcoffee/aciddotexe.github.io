@@ -30,17 +30,16 @@ export default defineUserConfig({
         link: "https://www.twitch.tv/aciddotexe"
       },
       {
-        text: "Mastodon",
-        link: "https://mastodon.au/@aciddotEXE",
-        rel: "me noopener noreferrer"
-      },
-      {
-        text: "Twitter",
-        link: "https://twitter.com/aciddotexe"
+        text: "Bluesky",
+        link: "https://bsky.app/profile/aciddotexe.bsky.social"
       },
       {
         text: "Discord",
-        link: "https://discord.gg/UpgqpW3r6F"
+        link: "https://aciddotexe.com/discord"
+      },
+      {
+        text: "Youtube",
+        link: "https://www.youtube.com/channel/UC4r2iHAiEk2WMhUnODlQo4Q"
       }
     ],
 
