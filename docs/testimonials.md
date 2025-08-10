@@ -52,6 +52,11 @@ const testimonials = [
     "Nemesio, The Gatekeeper",
     "https://github.com/nemesio65.png",
     "Much voice. Such streams. Good Games."
+  ),
+  new Testimonial(
+    "AlexTheTrash",
+    "https://github.com/AlexTheTrash.png",
+    "⭐️⭐️⭐️⭐️⭐️ Not Bad"
   )
 ].sort(() => 0.5 - Math.random());
 
