@@ -27,19 +27,27 @@ export default defineUserConfig({
     navbar: [
       {
         text: "Twitch",
-        link: `./twitch`
+        link: `./twitch`,
+        target: "_blank",
+        rel: "noopener"
       },
       {
         text: "Bluesky",
-        link: `./bluesky`
+        link: `./bluesky`,
+        target: "_blank",
+        rel: "noopener"
       },
       {
         text: "Discord",
-        link: `./discord`
+        link: `./discord`,
+        target: "_blank",
+        rel: "noopener"
       },
       {
         text: "YouTube",
-        link: `./youtube`
+        link: `./youtube`,
+        target: "_blank",
+        rel: "noopener"
       }
     ],
 

@@ -10,14 +10,22 @@ const props = defineProps({
   link: {
     type: String,
     required: true
+  },
+  target: {
+    type: String,
+    default: ""
+  },
+  rel: {
+    type: String,
+    default: ""
   }
 });
 
-const { text, link } = toRefs(props);
+const { text, link, target, rel } = toRefs(props);
 </script>
 
 <template>
-  <AcidicAutoLink class="button my-2" :item="{ text, link }" />
+  <AcidicAutoLink class="button my-2" :item="{ text, link, target, rel }" />
 </template>
 
 <style scoped>
