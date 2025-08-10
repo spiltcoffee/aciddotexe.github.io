@@ -27,19 +27,19 @@ export default defineUserConfig({
     navbar: [
       {
         text: "Twitch",
-        link: "https://www.twitch.tv/aciddotexe"
+        link: `./twitch`
       },
       {
         text: "Bluesky",
-        link: "https://bsky.app/profile/aciddotexe.bsky.social"
+        link: `./bluesky`
       },
       {
         text: "Discord",
-        link: "https://aciddotexe.com/discord"
+        link: `./discord`
       },
       {
-        text: "Youtube",
-        link: "https://www.youtube.com/channel/UC4r2iHAiEk2WMhUnODlQo4Q"
+        text: "YouTube",
+        link: `./youtube`
       }
     ],
 
